@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My IoT Home</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Buy Your Personal Smart Home Easily">
+    <meta name="keywords" content="IoT" />
+    <meta name="author" content="Dylan Vanmali, Austin Hwang, David Donaldson" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/home.css" rel="stylesheet">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script src="javascript/home.js"></script>
+</head>
+    
+<body>
+
+<div id="Google" class="tabcontent">
+  <h3>Google</h3>
+  <p>Google Assistant</p>
+</div>
+
+<div id="Amazon" class="tabcontent">
+  <h3>Amazon</h3>
+  <p>Amazon Alexa</p> 
+</div>
+
+<div id="Apple" class="tabcontent">
+  <h3>Apple</h3>
+  <p>Apple Siri</p>
+</div>
+
+<button class="tablink" onclick="openCity('Google', this, 'red')" id="defaultOpen">Google</button>
+<button class="tablink" onclick="openCity('Amazon', this, 'green')">Amazon</button>
+<button class="tablink" onclick="openCity('Apple', this, 'blue')">Apple</button>
+</body>
+   
+<h1>My IoT Home</h1>
+    
+<div class="smarthome">
+    <h2>Smart Homes</h2>
+    <a href="#accessories">
+        <img src="https://cdn.shopify.com/s/files/1/1211/6590/products/Google_GoogleHome_f7071a80-60fa-48b0-bd36-872739222f45_1024x1024.png?v=1512423518" alt="Google Home" class="btn1">
+    </a>
+    <a href="https://www.amazon.com/Amazon-Echo-And-Alexa-Devices/b?ie=UTF8&node=9818047011">
+        <img src="https://moneyish.com/wp-content/uploads/2017/09/screen-shot-2017-09-27-at-4-40-28-pm.png?w=904" alt="Amazon Echo" class="btn1">
+    </a>
+    <a href="https://www.apple.com/homepod/">
+        <img src="https://images.apple.com/v/homepod/d/images/overview/homepod_side_dark_large.jpg" alt="Apple HomePod" class="btn1">
+    </a>
+</div>
+<div id="accessories">
+    <h2>Accessories</h2>
+    <div id"lights">
+        <p>Lights:</p>
+    </div>
+    <div id"video">
+        <p>Video:</p>
+    </div>
+</div>
+    
+    
+<script>
+    function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    
+</html> 
