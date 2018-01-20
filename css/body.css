@@ -1,20 +1,16 @@
-
-
-#wrapper {
-    margin: 0 auto;
+.smarthome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 body {
     margin: 0;
 }
 
-.smarthome {
-    text-align: center;
-}
 
 #accessories-header {
     margin: 0;
@@ -27,7 +23,7 @@ body {
 }
 
 .google {
-    background-color: red;
+    background-color: #4285f4;
 }
 
 .amazon {
@@ -35,7 +31,7 @@ body {
 }
 
 .apple {
-    background-color: turquoise;
+    background-color: #aaaaaa;
 }
 
 h2 {
@@ -47,7 +43,7 @@ h2 {
 }
 
 h3 {
-    background-color: #555;
+    background-color: #f4bc42;
     color: #fff;
     padding-top: 1.5%;
     padding-bottom: 0.5%;
@@ -55,29 +51,24 @@ h3 {
     margin-top: 0;
 }
 
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
+.device {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
 }
 
 .thumb {
-    float: left;
-    width: 60%;
-}
-
-.table {
-    margin: 5%
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
+    width: 300px;
+    height: 300px;
 }
