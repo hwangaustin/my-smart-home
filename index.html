@@ -8,12 +8,37 @@
     <meta name="author" content="Dylan Vanmali, Austin Hwang, David Donaldson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/home.css" rel="stylesheet">
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-messaging.js"></script>
+
+
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-storage.js"></script> -->
+    <script>
+        // Initialize Firebase
+        var config = {
+        apiKey: "AIzaSyCxxdlF4pk1iPWZ6TuMAYexmq9gkJ4QcvE",
+        authDomain: "my-iot-home-maker.firebaseapp.com",
+        databaseURL: "https://my-iot-home-maker.firebaseio.com",
+        projectId: "my-iot-home-maker",
+        storageBucket: "my-iot-home-maker.appspot.com",
+        messagingSenderId: "771359331323"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
     <script src="javascript/home.js"></script>
 </head>
-    
+
 <body>
-  
+
 <div>
     <div id="Google" class="tabcontent">
       <img src="img/google_assistant.gif" style="height: 200px">
@@ -27,7 +52,7 @@
       <img src="img/Siri.gif" style="height: 200px">
     </div>
 </div>
-    
+
 <div id="tabs" class="tabbuttons" style="height: 50px">
     <div class="tablink" onclick="openCity('Google', this, 'red')" id="defaultOpen">Google</div>
 
@@ -35,11 +60,11 @@
 
     <div class="tablink" onclick="openCity('Apple', this, 'turquoise')">Apple</div>
 </div>
-    
+
 <div class="pagecontent" src="">
 </div>
-</body>  
-    
+</body>
+
 <script>
     function openCity(cityName,elmnt,color) {
     var i, tabcontent, tablinks;
@@ -71,5 +96,5 @@
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-    
-</html> 
+
+</html>
