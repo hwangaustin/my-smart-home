@@ -1,0 +1,83 @@
+
+
+#wrapper {
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.smarthome {
+    text-align: center;
+}
+
+#accessories-header {
+    margin: 0;
+}
+
+#accessories {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.google {
+    background-color: #4285f4;
+}
+
+.amazon {
+    background-color: #f49706;
+}
+
+.apple {
+    background-color: #aaaaaa;
+}
+
+h2 {
+    color: #fff;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    font-size: 300%;
+    margin-bottom: 0;
+}
+
+h3 {
+    background-color: #f4bc42;
+    color: #fff;
+    padding-top: 1.5%;
+    padding-bottom: 0.5%;
+    font-size: 200%;
+    margin-top: 0;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.thumb {
+    float: left;
+    width: 60%;
+}
+
+.table {
+    margin: 5%
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
