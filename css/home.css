@@ -21,12 +21,24 @@ body {font-family: "Lato", sans-serif;}
 .tabcontent {
     color: white;
     display: none;
-    padding: 50px;
+    padding: 0;
     text-align: center;
+    position: relative;
 }
 
-#Google {background-color:red;}
-#Amazon {background-color:green;}
-#Apple {background-color:blue;}
+.centered {
+    position: absolute;
+    top: 50%;
+}
+
+#Google {
+    background-color:white;
+}
+#Amazon {
+    background-color: rgb(60,60,60);
+}
+#Apple {
+    background-color:black;
+}
 
 </style>

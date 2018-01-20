@@ -13,51 +13,27 @@
 </head>
     
 <body>
-
+    
 <div id="Google" class="tabcontent">
-  <h3>Google</h3>
-  <p>Google Assistant</p>
+  <img src="img/google_assistant.gif" style="width:35.8%">
 </div>
 
 <div id="Amazon" class="tabcontent">
-  <h3>Amazon</h3>
-  <p>Amazon Alexa</p> 
+  <iframe class="frame" scrolling="no" width=100% height=window.innerHeight src="alexa/alexa.html" href="alexa/alexa.html" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div id="Apple" class="tabcontent">
-  <h3>Apple</h3>
-  <p>Apple Siri</p>
+  <img src="img/Siri.gif" style="width:26.8%">
 </div>
 
 <button class="tablink" onclick="openCity('Google', this, 'red')" id="defaultOpen">Google</button>
-<button class="tablink" onclick="openCity('Amazon', this, 'green')">Amazon</button>
-<button class="tablink" onclick="openCity('Apple', this, 'blue')">Apple</button>
+
+<button class="tablink" onclick="openCity('Amazon', this, 'orange')">Amazon</button>
+    
+<button class="tablink" onclick="openCity('Apple', this, 'turquoise')">Apple</button>
 </body>
-   
-<h1>My IoT Home</h1>
     
-<div class="smarthome">
-    <h2>Smart Homes</h2>
-    <a href="#accessories">
-        <img src="https://cdn.shopify.com/s/files/1/1211/6590/products/Google_GoogleHome_f7071a80-60fa-48b0-bd36-872739222f45_1024x1024.png?v=1512423518" alt="Google Home" class="btn1">
-    </a>
-    <a href="https://www.amazon.com/Amazon-Echo-And-Alexa-Devices/b?ie=UTF8&node=9818047011">
-        <img src="https://moneyish.com/wp-content/uploads/2017/09/screen-shot-2017-09-27-at-4-40-28-pm.png?w=904" alt="Amazon Echo" class="btn1">
-    </a>
-    <a href="https://www.apple.com/homepod/">
-        <img src="https://images.apple.com/v/homepod/d/images/overview/homepod_side_dark_large.jpg" alt="Apple HomePod" class="btn1">
-    </a>
-</div>
-<div id="accessories">
-    <h2>Accessories</h2>
-    <div id"lights">
-        <p>Lights:</p>
-    </div>
-    <div id"video">
-        <p>Video:</p>
-    </div>
-</div>
-    
+<div class="pagecontent" src=""></div>
     
 <script>
     function openCity(cityName,elmnt,color) {
@@ -69,6 +45,21 @@
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
+    }
+        
+    pgcontent = document.getElementsByClassName("pagecontent");
+    for (i = 0; i < pgcontent.length; i++) {
+        switch (cityName) {
+        case ('Google'):
+                $('.pagecontent').load("googlehome.html");
+                break;
+        case ('Amazon'):
+                $('.pagecontent').load("amazonecho.html");
+                break;
+        case ('Apple'):
+                $('.pagecontent').load("applehomepod.html");
+                break;
+        }
     }
     document.getElementById(cityName).style.display = "block";
     elmnt.style.backgroundColor = color;
