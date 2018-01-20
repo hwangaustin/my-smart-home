@@ -13,27 +13,32 @@
 </head>
     
 <body>
-    
-<div id="Google" class="tabcontent">
-  <img src="img/google_assistant.gif" style="height: 200px">
+  
+<div>
+    <div id="Google" class="tabcontent">
+      <img src="img/google_assistant.gif" style="height: 200px">
+    </div>
+
+    <div id="Amazon" class="tabcontent">
+      <iframe class="frame" scrolling="no" height=200px src="alexa/alexa.html" href="alexa/alexa.html" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id="Apple" class="tabcontent">
+      <img src="img/Siri.gif" style="height: 200px">
+    </div>
 </div>
-
-<div id="Amazon" class="tabcontent">
-  <iframe class="frame" scrolling="no" height=200px src="alexa/alexa.html" href="alexa/alexa.html" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div id="Apple" class="tabcontent">
-  <img src="img/Siri.gif" style="height: 200px">
-</div>
-
-<button class="tablink" onclick="openCity('Google', this, 'red')" id="defaultOpen">Google</button>
-
-<button class="tablink" onclick="openCity('Amazon', this, 'orange')">Amazon</button>
     
-<button class="tablink" onclick="openCity('Apple', this, 'turquoise')">Apple</button>
-</body>
+<div id="tabs" class="tabbuttons" style="height: 50px">
+    <div class="tablink" onclick="openCity('Google', this, 'red')" id="defaultOpen">Google</div>
+
+    <div class="tablink" onclick="openCity('Amazon', this, 'orange')">Amazon</div>
+
+    <div class="tablink" onclick="openCity('Apple', this, 'turquoise')">Apple</div>
+</div>
     
-<div class="pagecontent" src=""></div>
+<div class="pagecontent" src="">
+</div>
+</body>  
     
 <script>
     function openCity(cityName,elmnt,color) {
@@ -46,7 +51,6 @@
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
     }
-        
     pgcontent = document.getElementsByClassName("pagecontent");
     for (i = 0; i < pgcontent.length; i++) {
         switch (cityName) {

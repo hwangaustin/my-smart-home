@@ -8,9 +8,11 @@ body {font-family: "Lato", sans-serif;}
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    text-align: center;
     font-size: 17px;
-    width: 33.33333%;
+    width: 33.3333%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .tablink:hover {
