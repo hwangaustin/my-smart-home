@@ -10,32 +10,19 @@
     <link href="css/home.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
     
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-messaging.js"></script>
     <script
         id="fsc-api"
-        src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.js"
+            src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.js"
         type="text/javascript"
         data-storefront="myiothome.test.qa.onfastspring.com/google">
     </script>
     
-    <!-- <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-storage.js"></script> -->
-    <script>
-        // Initialize Firebase
-        var config = {
-        apiKey: "AIzaSyCxxdlF4pk1iPWZ6TuMAYexmq9gkJ4QcvE",
-        authDomain: "my-iot-home-maker.firebaseapp.com",
-        databaseURL: "https://my-iot-home-maker.firebaseio.com",
-        projectId: "my-iot-home-maker",
-        storageBucket: "my-iot-home-maker.appspot.com",
-        messagingSenderId: "771359331323"
-        };
-        firebase.initializeApp(config);
+    <script
+        id="fsc-api"
+            src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.js"
+        type="text/javascript"
+        data-storefront="myiothome.test.qa.onfastspring.com">
     </script>
-
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
     <script src="javascript/home.js"></script>
@@ -68,6 +55,10 @@
 <div class="pagecontent" src=""></div>
 </body>
     
+<div id="checkoutButton" onclick="checkout()">
+    Checkout
+</div>
+
 <!-- Footer -->
 <div id="footer">
     <div class="inner">

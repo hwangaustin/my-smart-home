@@ -104,22 +104,16 @@ h2 {
 
 @media screen and (min-width: 800px) {
     .card {
-        width: 46%;
-    }
-    .itemDescription {
-        visibility: visible;
+        width: 23%;
     }
     .card:hover {
-        width: 48%;
+        width: 25%;
     }
 }
 
 @media screen and (max-width: 555px) {
     .card {
         width: 90%;
-    }
-    .itemDescription {
-        visibility: collapse;
     }
     .card:hover {
         transform: scale(1.1);
