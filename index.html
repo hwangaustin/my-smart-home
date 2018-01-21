@@ -55,7 +55,7 @@
 <div class="pagecontent" src=""></div>
 </body>
 
-<div id="checkoutButton" onclick="checkout()">
+<div class="checkoutButton" id="checkoutButton" onclick="checkout()">
     Checkout
 </div>
 
@@ -80,6 +80,10 @@
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
+    }
+    chkbtns = document.getElementsByClassName("checkoutButton");
+    for (i = 0; i < chkbtns.length; i++) {
+        chkbtns[i].style.backgroundColor = color;
     }
     pgcontent = document.getElementsByClassName("pagecontent");
     for (i = 0; i < pgcontent.length; i++) {
