@@ -1,6 +1,5 @@
 .smarthome {
     text-align: center;
-
 }
 
 body {
@@ -11,6 +10,7 @@ body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-weight: bold;
     text-align: center;
+
 }
 
 #accessories-header {
@@ -26,6 +26,8 @@ body {
     padding: 5%;
     text-align: center;
     background-color: #aaa;
+
+    justify-content: center;
 }
 
 .card:hover {
