@@ -5,9 +5,9 @@
     <link href="css/body.css" rel="stylesheet">
 </head>
 
-
-<div id="smarthome">
-<div class="smarthome">
+<body>
+<h2 class="w3-center">Manual Slideshow</h2>
+<div class="w3-content w3-display-container">
     <div class="box" onclick="addCheckoutItem(this, 'amazon-dot','orange')">
         <h1 class="itemName">Amazon Echo Dot</h1><br>
         <img src="img/smarthome/dot.jpg" alt="Amazon Echo Dot">
@@ -16,10 +16,26 @@
     <div class="box" onclick="addCheckoutItem(this, 'amazon-echo','orange')">
         <h1 class="itemName">Amazon Echo</h1><br>
         <img src="img/smarthome/echo.jpg" alt="Amazon Echo">
-        <p>Price: 99.99</p>
+        <p>Price: $99.99</p>
     </div>
 </div>
-</div>
+    
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("box");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
 
 <div id="accessories">
 
@@ -156,5 +172,5 @@
     </div>
 </div>
 
-
+</body>
 </html>

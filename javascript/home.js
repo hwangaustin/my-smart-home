@@ -1,3 +1,6 @@
+// ----------------------------------------------
+/* FastSpring API Calls */
+
 function addCheckoutItem(elmnt, item, color) {
     // User wants to remove item
     if (elmnt.style.borderColor == color) {

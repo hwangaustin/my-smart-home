@@ -4,6 +4,7 @@
 <head>
     <link href="css/body.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script
         id="fsc-api"
         src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.js"
@@ -12,9 +13,9 @@
     </script>
 </head>
 
-
-<div id="smarthome">
-<div class="smarthome">
+<body>
+<h2 class="w3-center">Manual Slideshow</h2>
+<div class="w3-content w3-display-container">
     <div class="box" onclick="addCheckoutItem(this, 'google-home-mini','red')">
         <h1 class="itemName">Google Home Mini</h1><br>
         <img src="img/smarthome/mini.png" alt="Google Home">
@@ -31,7 +32,23 @@
         <p>Price: $399</p>
     </div>
 </div>
-</div>
+    
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("box");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
 
 <div id="accessories">
     <div id=accessories_sub>TV & Video</div>
@@ -112,5 +129,7 @@
         </div>
     </div>
 </div>
+    
+</body>
 
 </html>
