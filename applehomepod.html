@@ -13,109 +13,121 @@
 </div>
 
 <div id="accessories">
-    <h3>TV & Video</h3>
-    <div class="device">
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/appletv.jpg">
-            <p>Apple TV<br>
-            <a href="https://www.apple.com/shop/buy-tv/apple-tv/apple-tv-32gb">Click here for more info.</a>
-            <br>Price: $149.00</p>
-        </div>
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/appletv4k.jpg">
-            <p>Apple TV 4K<br>
-            <a href="https://www.apple.com/apple-tv-4k/">Click here for more info.</a>
-            <br>Price: $149.00</p>
+    <div id=accessories_sub>TV & Video</div>
+    <div class="table" id="table">
+        <div class ="card" onclick="addCheckoutItem(this, 'apple-tv-4k','turquoise')">
+            <h1 class="itemName">Apple TV</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/appletv.jpg" alt="Apple TV"><br>
+            </div>
+            <p>Price: $149.00</p>
         </div>
     </div>
 
-    <h3>Cameras</h3>
-    <div class="device">
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/dlinkcam.png">
-            <p>D-Link HD Pan & Tilt Wi-Fi Camera<br>
-            <a href="http://us.dlink.com/products/connect/hd-pan-tilt-wi-fi-camera-dcs5030l/">Click here for more info.</a>
-            <br>Price: $119.99</p>
+    <div id=accessories_sub>Cameras</div>
+    <div class="table" id="table">
+        <div class ="card" onclick="addCheckoutItem(this, 'd-link-hd-pan-tilt-wi-fi-camera','turquoise')">
+            <h1 class="itemName">D-Link Wi-Fi Camera</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/dlinkcam.png" alt="D-Link HD Pan & Tilt Wi-Fi Camera"><br>
+            </div>
+            <p>Price: $119.99</p>
         </div>
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/circle2.png">
-            <p>Logitech Circle 2 (Wireless)<br>
-            <a href="https://www.logitech.com/en-us/product/circle-2-home-security-camera">Click here for more info.</a>
-            <br>Price: $199.99</p>
+        <div class ="card" onclick="addCheckoutItem(this, 'logitech-circle-2-wireless','turquoise')">
+            <h1 class="itemName">Logitech Circle 2 (Wireless)</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/circle2.png" alt="Logitech Circle 2 (Wireless)"><br>
+            </div>
+            <p>Price: $199.99</p>
         </div>
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/netatmoin.jpg">
-            <p>Netatmo Indoor Security Camera<br>
-            <a href="https://www.netatmo.com/en-US/product/security/welcome">Click here for more info.</a>
-            <br>Price: $199.00</p>
-        </div>
-    </div>
-
-    <h3>Lighting</h3>
-    <div class="device">
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/clifegp.jpg">
-            <p>C-Life General Purpose Smart Light Bulb<br>
-            <a href="https://www.cbyge.com/products/c-life">Click here for more info.</a>
-            <br>Price: $64.99</p>
-        </div>
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/idevices.jpg">
-            <p>iDevices Socket WiFi Light Bulb Adapter<br>
-            <a href="https://store.idevicesinc.com/idevices-socket/">Click here for more info.</a>
-            <br>Price: $49.95</p>
-        </div>
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/lifx.jpg">
-            <p>LIFX A19 LED Light<br>
-            <a href="https://www.lifx.com/products/lifx">Click here for more info.</a>
-            <br>Price: $49.95</p>
+        <div class ="card" onclick="addCheckoutItem(this, 'netatmo-indoor-security-camera','turquoise')">
+            <h1 class="itemName">Netatmo Indoor Security Camera</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/netatmoin.jpg" alt="Netatmo Indoor Security Camera"><br>
+            </div>
+            <p>Price: $199.00</p>
         </div>
     </div>
 
-    <h3>Thermostats</h3>
-    <div class="device">
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/ecobee4.png" alt="firetv">
-            <p>ecobee4 Thermostat with Sensor<br>
-            <a href="https://www.ecobee.com/ecobee4/">Click here for more info.</a>
-            <br>Price: $239.98</p>
+
+    <div id=accessories_sub>Lightning</div>
+    <div class="table" id="table">
+        <div class ="card" onclick="addCheckoutItem(this, 'c-life-general-purpose-smart-light-bulb','turquoise')">
+            <h1 class="itemName">C-Life General Purpose Smart Light Bulb</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/clifegp.jpg" alt="C-Life General Purpose Smart Light Bulb"><br>
+            </div>
+            <p>Price: $64.99</p>
         </div>
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/lyric.jpg" alt="firetv">
-            <p>Lyric Round Wi-Fi Thermostat (2nd Generation)<br>
-            <a href="https://shophome.honeywell.com/product/RCH9310WF5003/all">Click here for more info.</a>
-            <br>Price: $199.00</p>
+        <div class ="card" onclick="addCheckoutItem(this, 'idevices-socket-wifi-light-bulb-adapter','turquoise')">
+            <h1 class="itemName">iDevices Socket WiFi Light Bulb Adapter</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/idevices.jpg" alt="iDevices Socket WiFi Light Bulb Adapter"><br>
+            </div>
+            <p>Price: $49.95</p>
         </div>
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/sensiwifi.jpg" alt="firetv">
-            <p>Sensi Wi-Fi Thermostat<br>
-            <a href="https://sensicomfort.com/products/wi-fi-thermostat?utm_campaign=&utm_content=Sensi_Apple&utm_medium=&utm_source=Apple&utm_term=">Click here for more info.</a>
-            <br>Price: $129.00</p>
+        <div class ="card" onclick="addCheckoutItem(this, 'lifx-a19-led-light','turquoise')">
+            <h1 class="itemName">LIFX A19 LED Light</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/lifx.jpg" alt="LIFX A19 LED Light"><br>
+            </div>
+            <p>Price: $49.95</p>
         </div>
     </div>
 
-    <h3>Security</h3>
-    <div class="device">
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/august.jpg">
-            <p>August Smart Lock (2nd Generation)<br>
-            <a href="https://www.amazon.com/dp/B0168IXO3M/ref=gbps_img_m13_c839_fffd02b7?smid=ATVPDKIKX0DER&pf_rd_p=fc495a9e-9ca3-469a-8624-cd0eac90c839&pf_rd_s=merchandised-search-13&pf_rd_t=101&pf_rd_i=16334612011&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=4M8570F3SCB3X0HNK37M">Click here for more info.</a>
-            <br>Price: $115.49</p>
+
+    <div id=accessories_sub>Thermostats</div>
+    <div class="table" id="table">
+        <div class ="card" onclick="addCheckoutItem(this, 'ecobee4-thermostat-with-sensor','turquoise')">
+            <h1 class="itemName">ecobee4 Thermostat with Sensor</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/ecobee4.png" alt="ecobee4 Thermostat with Sensor"><br>
+            </div>
+            <p>Price: $239.98</p>
         </div>
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/friday.jpg">
-            <p>Friday Lock<br>
-            <a href="www.fridaylabs.net/views/home-page.html">Click here for more info.</a>
-            <br>Price: $199.00</p>
+        <div class ="card" onclick="addCheckoutItem(this, 'lyric-round-wi-fi-thermostat-2nd-generation','turquoise')">
+            <h1 class="itemName">Lyric Round Wi-Fi Thermostat</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/lyric.jpg" alt="Lyric Round Wi-Fi Thermostat"><br>
+            </div>
+            <p>Price: $199.00</p>
         </div>
-        <div class="column">
-            <img class="thumb" src="img/accessories/apple/kwiksetpremis.png">
-            <p>Kwikset Premis<br>
-            <a href="https://www.amazon.com/gp/product/B01N0AV4Z7/ref=as_li_tl?ie=UTF8&tag=kwiksetsm-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B01N0AV4Z7&linkId=c1c31d08c316e907c98219fa5769834c">Click here for more info.</a>
-            <br>Price: $229.00</p>
+        <div class ="card" onclick="addCheckoutItem(this, 'sensi-wi-fi-thermostat','turquoise')">
+            <h1 class="itemName">Sensi Wi-Fi Thermostat</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/sensiwifi.jpg" alt="Sensi Wi-Fi Thermostat"><br>
+            </div>
+            <p>Price: $129.00</p>
         </div>
     </div>
+
+
+
+    <div id=accessories_sub>Security</div>
+    <div class="table" id="table">
+        <div class ="card" onclick="addCheckoutItem(this, 'august-smart-lock-2nd-generation','turquoise')">
+            <h1 class="itemName">August Smart Lock</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/august.jpg" alt="August Smart Lock"><br>
+            </div>
+            <p>Price: $115.49</p>
+        </div>
+        <div class ="card" onclick="addCheckoutItem(this, 'friday-lock','turquoise')">
+            <h1 class="itemName">Friday Lock</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/friday.jpg" alt="Friday Lock"><br>
+            </div>
+            <p>Price: $199.00</p>
+        </div>
+        <div class ="card" onclick="addCheckoutItem(this, 'kwikset-premis','turquoise')">
+            <h1 class="itemName">Sensi Wi-Fi Thermostat</h1><br>
+            <div class="column" id="column">
+                <img class="thumb" src="img/accessories/apple/kwiksetpremis.png" alt="Sensi Wi-Fi Thermostat"><br>
+            </div>
+            <p>Price: $229.00</p>
+        </div>
+    </div>
+
 </div>
 
 
